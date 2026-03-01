@@ -85,6 +85,7 @@
       color: var(--text);
       text-decoration: none;
       letter-spacing: -0.5px;
+      margin-right: auto;
     }
 
     .nav-logo span { color: var(--accent); }
@@ -138,7 +139,7 @@
       min-height: 100vh;
       display: flex;
       align-items: center;
-      padding: 0 2rem;
+      padding: 80px 2rem 0;
       position: relative;
       overflow: hidden;
     }
@@ -160,32 +161,32 @@
       width: 100%;
     }
 
-    .hero-badge {
-      position: absolute;
-      top: 100px;
-      right: 2rem;
+    .status-badge {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       background: var(--accent-glow);
       border: 1px solid rgba(45, 159, 147, 0.2);
       color: var(--accent-light);
-      padding: 8px 18px;
+      padding: 5px 14px;
       border-radius: 50px;
-      font-size: 0.78rem;
+      font-size: 0.72rem;
       font-weight: 500;
       letter-spacing: 0.5px;
-      backdrop-filter: blur(10px);
-      z-index: 10;
+      white-space: nowrap;
     }
 
-    .hero-badge .dot {
-      width: 7px;
-      height: 7px;
+    .status-badge .dot {
+      width: 6px;
+      height: 6px;
       background: #34d399;
       border-radius: 50%;
       animation: pulse 2s infinite;
     }
+
+    .nav-status { margin-left: 2rem; }
+
+    .hero-status { display: none; margin-bottom: 1rem; }
 
     @keyframes pulse {
       0%, 100% { opacity: 1; }
@@ -197,6 +198,7 @@
       font-weight: 800;
       line-height: 1.1;
       letter-spacing: -2px;
+      margin-top: 2rem;
       margin-bottom: 1.25rem;
     }
 
@@ -693,6 +695,8 @@
 
     /* ===== Responsive ===== */
     @media (max-width: 900px) {
+      .nav-status { display: none; }
+      .hero-status { display: inline-flex; }
       .skills-grid { grid-template-columns: repeat(2, 1fr); }
       .projects-grid { grid-template-columns: 1fr; }
       .about-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -740,6 +744,9 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="status-badge nav-status">
+        <span class="dot"></span> Open to Work
+      </div>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -748,10 +755,10 @@
 
   <!-- Hero -->
   <section class="hero" id="hero">
-    <div class="hero-badge reveal">
-      <span class="dot"></span> Open to Work
-    </div>
     <div class="hero-inner">
+      <div class="status-badge hero-status">
+        <span class="dot"></span> Open to Work
+      </div>
       <h1 class="reveal">
         Senior Software<br>Engineer <span class="accent">&</span><br>Laravel Specialist
       </h1>
@@ -779,7 +786,7 @@
           <p>Industries Served</p>
         </div>
         <div class="stat">
-          <h3>20+</h3>
+          <h3>30+</h3>
           <p>Projects Delivered</p>
         </div>
         <div class="stat">
