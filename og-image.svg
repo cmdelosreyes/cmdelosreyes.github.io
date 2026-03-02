@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0b0f14;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111820;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2d9f93;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3dbdaf;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid pattern -->
+  <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#1a2332" stroke-width="1"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.5"/>
+
+  <!-- Accent glow blob top-right -->
+  <ellipse cx="1050" cy="120" rx="280" ry="180" fill="#2d9f93" opacity="0.06"/>
+
+  <!-- Accent glow blob bottom-left -->
+  <ellipse cx="150" cy="520" rx="220" ry="140" fill="#2d9f93" opacity="0.05"/>
+
+  <!-- Left accent bar -->
+  <rect x="80" y="120" width="4" height="390" rx="2" fill="url(#accentGrad)"/>
+
+  <!-- Availability badge -->
+  <rect x="104" y="120" width="160" height="32" rx="16" fill="#2d9f9326" stroke="#2d9f9340" stroke-width="1"/>
+  <circle cx="122" cy="136" r="5" fill="#34d399" filter="url(#glow)"/>
+  <text x="134" y="141" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#3dbdaf" letter-spacing="0.5">Open to Work</text>
+
+  <!-- Name -->
+  <text x="104" y="230" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="800" fill="#e4e8ed" letter-spacing="-2">Carlos Miguel</text>
+  <text x="104" y="298" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="800" fill="#e4e8ed" letter-spacing="-2">Delos Reyes</text>
+
+  <!-- Title with accent -->
+  <text x="104" y="358" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="600" fill="#6b7f96" letter-spacing="-0.5">Senior Software Engineer</text>
+  <rect x="104" y="374" width="320" height="3" rx="1.5" fill="url(#accentGrad)"/>
+
+  <!-- Specialization -->
+  <text x="104" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#4a90a4" letter-spacing="0.3">Laravel Specialist  ·  Performance Engineering  ·  AI-Driven Dev</text>
+
+  <!-- Stats row -->
+  <text x="104" y="490" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="800" fill="#2d9f93">~8</text>
+  <text x="104" y="516" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#4d6070" letter-spacing="1.5">YEARS EXP</text>
+
+  <text x="230" y="490" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="800" fill="#2d9f93">30+</text>
+  <text x="230" y="516" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#4d6070" letter-spacing="1.5">PROJECTS</text>
+
+  <text x="356" y="490" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="800" fill="#2d9f93">5+</text>
+  <text x="356" y="516" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#4d6070" letter-spacing="1.5">INDUSTRIES</text>
+
+  <text x="470" y="490" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="800" fill="#2d9f93">7</text>
+  <text x="470" y="516" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#4d6070" letter-spacing="1.5">GOV SYSTEMS</text>
+
+  <!-- Divider -->
+  <line x1="600" y1="120" x2="600" y2="510" stroke="#1a2332" stroke-width="1"/>
+
+  <!-- Right side - tech stack label -->
+  <text x="650" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#2d9f93" letter-spacing="2">// CORE STACK</text>
+
+  <!-- Tech pills -->
+  <!-- Row 1 -->
+  <rect x="650" y="185" width="100" height="32" rx="8" fill="#111820" stroke="#1a2332" stroke-width="1"/>
+  <text x="700" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#e4e8ed" text-anchor="middle">Laravel</text>
+
+  <rect x="764" y="185" width="100" height="32" rx="8" fill="#111820" stroke="#1a2332" stroke-width="1"/>
+  <text x="814" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#e4e8ed" text-anchor="middle">PHP</text>
+
+  <rect x="878" y="185" width="100" height="32" rx="8" fill="#111820" stroke="#1a2332" stroke-width="1"/>
+  <text x="928" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#e4e8ed" text-anchor="middle">Vue.js</text>
+
+  <rect x="992" y="185" width="130" height="32" rx="8" fill="#111820" stroke="#1a2332" stroke-width="1"/>
+  <text x="1057" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#e4e8ed" text-anchor="middle">TypeScript</text>
+
+  <!-- Row 2 -->
+  <rect x="650" y="231" width="100" height="32" rx="8" fill="#111820" stroke="#1a2332" stroke-width="1"/>
+  <text x="700" y="251" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#e4e8ed" text-anchor="middle">MySQL</text>
+
+  <rect x="764" y="231" width="100" height="32" rx="8" fill="#111820" stroke="#1a2332" stroke-width="1"/>
+  <text x="814" y="251" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#e4e8ed" text-anchor="middle">Redis</text>
+
+  <rect x="878" y="231" width="100" height="32" rx="8" fill="#111820" stroke="#1a2332" stroke-width="1"/>
+  <text x="928" y="251" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#e4e8ed" text-anchor="middle">Docker</text>
+
+  <rect x="992" y="231" width="130" height="32" rx="8" fill="#111820" stroke="#1a2332" stroke-width="1"/>
+  <text x="1057" y="251" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#e4e8ed" text-anchor="middle">AWS / GCP</text>
+
+  <!-- Row 3 -->
+  <rect x="650" y="277" width="100" height="32" rx="8" fill="#111820" stroke="#1a2332" stroke-width="1"/>
+  <text x="700" y="297" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#e4e8ed" text-anchor="middle">Nuxt.js</text>
+
+  <rect x="764" y="277" width="100" height="32" rx="8" fill="#111820" stroke="#1a2332" stroke-width="1"/>
+  <text x="814" y="297" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#e4e8ed" text-anchor="middle">Livewire</text>
+
+  <rect x="878" y="277" width="100" height="32" rx="8" fill="#111820" stroke="#1a2332" stroke-width="1"/>
+  <text x="928" y="297" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#e4e8ed" text-anchor="middle">Nginx</text>
+
+  <rect x="992" y="277" width="130" height="32" rx="8" fill="#111820" stroke="#1a2332" stroke-width="1"/>
+  <text x="1057" y="297" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#e4e8ed" text-anchor="middle">PostgreSQL</text>
+
+  <!-- Industries label -->
+  <text x="650" y="348" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#2d9f93" letter-spacing="2">// INDUSTRIES</text>
+
+  <!-- Industry pills with teal accent -->
+  <rect x="650" y="364" width="108" height="32" rx="8" fill="#2d9f9315" stroke="#2d9f9330" stroke-width="1"/>
+  <text x="704" y="384" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#3dbdaf" text-anchor="middle">Fintech</text>
+
+  <rect x="770" y="364" width="108" height="32" rx="8" fill="#2d9f9315" stroke="#2d9f9330" stroke-width="1"/>
+  <text x="824" y="384" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#3dbdaf" text-anchor="middle">Government</text>
+
+  <rect x="890" y="364" width="108" height="32" rx="8" fill="#2d9f9315" stroke="#2d9f9330" stroke-width="1"/>
+  <text x="944" y="384" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#3dbdaf" text-anchor="middle">Telecom</text>
+
+  <rect x="1010" y="364" width="108" height="32" rx="8" fill="#2d9f9315" stroke="#2d9f9330" stroke-width="1"/>
+  <text x="1064" y="384" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#3dbdaf" text-anchor="middle">Media</text>
+
+  <!-- URL / domain -->
+  <text x="650" y="510" font-family="ui-monospace, monospace" font-size="14" fill="#2d9f93" letter-spacing="0.5">cmdelosreyes.github.io</text>
+
+  <!-- Bottom border accent -->
+  <rect x="0" y="620" width="1200" height="10" fill="url(#accentGrad)"/>
+</svg>
